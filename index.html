@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Holi Wishing Script</title>
+    </head>
+<body>
+<link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <div class="card">
+        <!-- Yahan aapki GIF Image Aayegi -->
+        <div class="gif-container">
+            <!-- Yahan 'holi.gif' ki jagah apni image ka naam likhein -->
+            <img src="holi4.gif" alt="Happy Holi Animation" id="mainImage">
+        </div>
+
+        <!-- <div id="greeting-section">
+            <span class="sender-name" id="display-name"></span>
+            <h1>ki taraf se <br> Happy Holi! 🎨🔫</h1>
+            <p>Rango ka tyohar aapke jeevan mein khushiyan laye!</p>
+        </div> -->
+
+        <body>
+
+    <h1>🎨 Happy Holi! 🎨</h1>
+    
+    <!-- Yahan par bhejne wale ka naam aayega -->
+    <h2 id="greeting">Aapko aur aapke pariwar ko Happy Holi!</h2>
+
+    <div class="box">
+        <h3>Apna Link Banayein:</h3>
+        <input type="text" id="nameInput" placeholder="Apna naam likhein">
+        <br>
+        <button onclick="generateLink()">WhatsApp Link Banayein</button>
+    </div>
+
+    
+
+<h3>Aapka Link Tayyar Hai!</h3>
+
+    <div class="share-container">
+        <!-- WhatsApp Share Button -->
+        <button onclick="shareOnWhatsApp()" class="share-btn whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> WhatsApp Par Share Karein
+        </button>
+
+        <!-- Telegram Share Button -->
+        <button onclick="shareOnTelegram()" class="share-btn telegram-btn">
+            <i class="fab fa-telegram-plane"></i> Telegram Par Share Karein
+        </button>
+    </div>
+
+
+    <p id="shareLink" class="share-link"></p>
+
+        <!-- <div class="input-section">
+            <p style="margin-bottom: 10px; font-weight: bold;">Apna khud ka wisher banayein 👇</p>
+            <input type="text" id="userName" placeholder="Yahan apna naam likhein..." required>
+            <button class="btn-generate" onclick="generateLink()">Link Banayein 🔗</button>
+        </div> -->
+
+        <div id="share-section">
+            <p style="color: green; font-weight: bold; margin-bottom: 10px;">Aapka Link Taiyar Hai!</p>
+            <div class="link-box" id="generated-link-text"></div>
+            <button class="btn-whatsapp" onclick="shareOnWhatsApp()">WhatsApp par Bhejein 💬</button>
+            <button class="btn-copy" onclick="copyLink()">Link Copy Karein 📋</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>

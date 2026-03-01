@@ -1,0 +1,165 @@
+*{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+
+         body { text-align: center; font-family: Arial, sans-serif; background-color: #fce4ec; padding: 20px; }
+        h1 { color: #d81b60; font-size: 40px; }
+        h2 { color: #4a148c; font-size: 30px; animation: blinker 1.5s linear infinite; }
+        @keyframes blinker { 50% { opacity: 0; } }
+        .box { margin-top: 50px; background: white; padding: 20px; border-radius: 10px; display: inline-block; box-shadow: 0px 0px 10px gray; }
+        input { padding: 10px; font-size: 16px; border-radius: 5px; border: 1px solid gray; }
+        button { padding: 10px 20px; font-size: 16px; background-color: #ff9800; color: white; border: none; cursor: pointer; border-radius: 5px; margin-top: 10px; }
+        .share-link { margin-top: 20px; font-weight: bold; word-break: break-all; color: blue; }
+        .card {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            padding: 20px;
+            max-width: 450px;
+            width: 100%;
+            border: 4px solid;
+            border-image: linear-gradient(45deg, red, blue, green, yellow, orange) 1;
+        }
+        .gif-container img {
+            width: 100%;
+            max-height: 250px;
+            object-fit: contain;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            animation: colorChange 2s infinite;
+        }
+        .sender-name {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ff0055;
+            text-transform: uppercase;
+            animation: bounce 1.5s infinite;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        /* Color Animation */
+        @keyframes colorChange {
+            0% { color: #ff0000; }
+            25% { color: #0000ff; }
+            50% { color: #008000; }
+            75% { color: #ffa500; }
+            100% { color: #800080; }
+        }
+
+        /* Bounce Animation */
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .input-section {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px dashed #ccc;
+        }
+        input[type="text"] {
+            width: 90%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #ff0055;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+        }
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            margin: 5px;
+        }
+        button:hover {
+            transform: scale(1.05);
+        }
+        .btn-generate { background: #ff0055; color: white; }
+        .btn-whatsapp { background: #25D366; color: white; }
+        .btn-copy { background: #007BFF; color: white; }
+        
+        #share-section {
+            display: none;
+            margin-top: 15px;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .link-box {
+            width: 100%;
+            padding: 8px;
+            font-size: 12px;
+            background: #eee;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            word-break: break-all;
+        }
+
+         .share-container {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        /* Common Button Styling */
+        .share-btn {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            color: white;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s ease;
+        }
+
+        /* WhatsApp Button Colors */
+        .whatsapp-btn {
+            background-color: #25D366;
+        }
+        .whatsapp-btn:hover {
+            background-color: #1DA851;
+        }
+
+        /* Telegram Button Colors */
+        .telegram-btn {
+            background-color: #0088cc;
+        }
+        .telegram-btn:hover {
+            background-color: #006699;
+        }
+
+        /* Icon size adjustment */
+        .share-btn i {
+            font-size: 20px;
+        }
